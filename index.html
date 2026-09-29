@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Espaço Mover | Fisioterapia, Pilates e Aéreos em Ribeirão Preto</title>
+  <meta name="description" content="Espaço Mover no Jardim Paulista, Ribeirão Preto: clínica e estúdio integrado de Fisioterapia Clínica, Pilates em Aparelhos e Modalidades Aéreas. Cuidado individualizado da infância à melhor idade." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Espaço Mover | Fisioterapia, Pilates e Aéreos" />
+  <meta property="og:description" content="A precisão clínica da fisioterapia, o fortalecimento do pilates e a liberdade dos movimentos aéreos em um ambiente acolhedor no Jardim Paulista." />
+  <meta property="og:image" content="assets/images/logo.png" />
+
+  <!-- Google Fonts: Newsreader (Editorial Serif) e Plus Jakarta Sans (Humanist Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN com Paleta Mineral Têxtil Refinada -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        screens: {
+          xs: "480px",
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1536px"
+        },
+        extend: {
+          colors: {
+            linen: "#FAF9F5",
+            travertine: "#EFECE6",
+            "travertine-light": "#F6F4EF",
+            "travertine-dark": "#E2DDD5",
+            graphite: "#212322",
+            "graphite-muted": "#565A55",
+            "graphite-soft": "#858B84",
+            "graphite-border": "#E2DDD5",
+            terracotta: "#C26E45",
+            "terracotta-dark": "#A85A33",
+            "terracotta-light": "#F9F2ED",
+            sage: "#778B74",
+            "sage-dark": "#586B56",
+            "sage-light": "#EEF3ED"
+          },
+          fontFamily: {
+            sans: ["'Plus Jakarta Sans'", "system-ui", "-apple-system", "sans-serif"],
+            serif: ["'Newsreader'", "Georgia", "serif"],
+            editorial: ["'Newsreader'", "Georgia", "serif"]
+          },
+          borderRadius: {
+            DEFAULT: "0.375rem",
+            lg: "0.625rem",
+            xl: "0.875rem",
+            "2xl": "1.125rem",
+            "3xl": "1.5rem",
+            full: "9999px"
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Estilos Customizados & Sistema de Design Editorial -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-linen font-sans text-graphite antialiased selection:bg-terracotta-light selection:text-terracotta-dark">
+
+  <!-- =====================================================================
+       HEADER / NAVBAR EDITORIAL TOTALMENTE RESPONSIVO
+       ===================================================================== -->
+  <header class="fixed top-0 w-full z-50 header-editorial transition-editorial">
+    <div class="h-18 sm:h-20 w-full px-4 sm:px-6 lg:px-8 max-w-[1360px] mx-auto flex items-center justify-between">
+      
+      <!-- Logotipo & Nome do Espaço (com proteção contra quebras em telas estreitas) -->
+      <a href="#inicio" class="flex items-center gap-2.5 sm:gap-3.5 group min-w-0">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-white p-1 border border-black/10 flex items-center justify-center transition-editorial group-hover:border-terracotta shadow-xs shrink-0">
+          <img src="assets/images/logo.png" alt="Espaço Mover Logo" class="w-full h-full object-contain" />
+        </div>
+        <div class="flex flex-col min-w-0">
+          <span class="font-serif text-xl sm:text-2xl font-normal tracking-tight text-graphite leading-none group-hover:text-terracotta transition-colors truncate">
+            Espaço Mover
+          </span>
+          <span class="text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase text-sage-dark pt-1 truncate">
+            Fisioterapia · Pilates · Aéreos
+          </span>
+        </div>
+      </a>
+
+      <!-- Navegação Desktop (visível a partir de lg: 1024px) -->
+      <nav class="hidden lg:flex items-center gap-7 xl:gap-8 text-sm font-medium tracking-normal">
+        <a href="#inicio" class="text-graphite font-semibold py-1.5 transition-colors hover:text-terracotta">Início</a>
+        <a href="#localizacao" class="text-graphite-muted py-1.5 transition-colors hover:text-graphite">Localização</a>
+        <a href="#publico" class="text-graphite-muted py-1.5 transition-colors hover:text-graphite">Para Quem</a>
+        <a href="#galeria" class="text-graphite-muted py-1.5 transition-colors hover:text-graphite">O Espaço</a>
+        <a href="#orientacao" class="text-graphite-muted py-1.5 transition-colors hover:text-graphite">Modalidades</a>
+        <a href="#faq" class="text-graphite-muted py-1.5 transition-colors hover:text-graphite">Dúvidas</a>
+      </nav>
+
+      <!-- Ações do Cabeçalho -->
+      <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+        <div class="hidden xl:flex flex-col text-right text-xs text-graphite-muted">
+          <span class="text-graphite font-semibold flex items-center gap-1.5 justify-end">
+            <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+            Ribeirão Preto · SP
+          </span>
+          <a href="https://wa.me/5516991811461" target="_blank" rel="noopener noreferrer" class="hover:text-terracotta transition-colors font-medium">
+            (16) 99181-1461
+          </a>
+        </div>
+
+        <button type="button" class="booking-trigger btn-terracotta text-xs uppercase tracking-wider font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl hidden sm:inline-flex items-center gap-2" data-modality="Geral">
+          <span class="material-symbols-outlined text-[17px]">calendar_month</span>
+          <span>Agendar Avaliação</span>
+        </button>
+
+        <!-- Botão Menu Mobile (Área de toque otimizada 44x44px) -->
+        <button id="mobile-menu-btn" type="button" aria-expanded="false" class="lg:hidden w-11 h-11 flex items-center justify-center text-graphite hover:text-terracotta focus:outline-none rounded-lg hover:bg-black/5 transition-colors" aria-label="Abrir Menu">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Dropdown Mobile com Rolagem Segura para telas pequenas -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-linen border-b border-black/10 px-5 sm:px-6 py-5 shadow-xl max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+      <nav class="flex flex-col space-y-3.5 text-base font-medium">
+        <a href="#inicio" class="mobile-nav-link text-graphite font-semibold hover:text-terracotta py-1">Início</a>
+        <a href="#localizacao" class="mobile-nav-link text-graphite-muted hover:text-graphite py-1">Localização & Como Chegar</a>
+        <a href="#publico" class="mobile-nav-link text-graphite-muted hover:text-graphite py-1">Para Quem é o Espaço</a>
+        <a href="#galeria" class="mobile-nav-link text-graphite-muted hover:text-graphite py-1">Instalações e Fotos</a>
+        <a href="#orientacao" class="mobile-nav-link text-graphite-muted hover:text-graphite py-1">Orientação de Práticas</a>
+        <a href="#faq" class="mobile-nav-link text-graphite-muted hover:text-graphite py-1">Perguntas Frequentes</a>
+        <div class="pt-3 border-t border-black/10">
+          <button type="button" class="booking-trigger w-full btn-terracotta text-sm uppercase tracking-wider font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2" data-modality="Geral">
+            <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+            <span>Agendar Avaliação</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       CONTEÚDO PRINCIPAL
+       ===================================================================== -->
+  <main class="w-full pt-18 sm:pt-20">
+
+    <!-- =====================================================================
+         SEÇÃO HERO EDITORIAL TOTALMENTE FLUIDA
+         ===================================================================== -->
+    <section id="inicio" class="relative w-full bg-linen px-4 sm:px-6 lg:px-8 max-w-[1360px] mx-auto py-10 sm:py-14 lg:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 items-center">
+        
+        <!-- Coluna da Esquerda (7 colunas): Apresentação Editorial -->
+        <div class="lg:col-span-7 flex flex-col justify-between space-y-6 sm:space-y-8 reveal-on-scroll">
+          <div class="space-y-4 sm:space-y-5">
+            
+            <!-- Eyebrow Discreto e Responsivo -->
+            <div class="inline-flex items-center gap-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.18em] text-terracotta">
+              <span class="w-5 sm:w-6 h-[1.5px] bg-terracotta inline-block shrink-0"></span>
+              <span class="truncate">Centro Integrado de Fisioterapia & Movimento</span>
+            </div>
+
+            <!-- Título Editorial Serifado Escalável -->
+            <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-graphite tracking-tight leading-[1.12] sm:leading-[1.08] text-balance">
+              O movimento que cura.<br />
+              <span class="italic font-light text-terracotta">A leveza que transforma.</span>
+            </h1>
+
+            <p class="text-sm sm:text-base lg:text-lg text-graphite-muted max-w-2xl font-normal leading-relaxed">
+              Um ambiente terapêutico onde a <strong>precisão clínica da fisioterapia</strong>, o fortalecimento estruturado do <strong>pilates em aparelhos</strong> e a liberdade expressiva dos <strong>movimentos aéreos</strong> se integram para proporcionar alinhamento biomecânico, alívio de dores e vitalidade em todas as fases da sua vida.
+            </p>
+          </div>
+
+          <!-- Ações Principais (Botões em largura total no mobile, inline em telas maiores) -->
+          <div class="space-y-6">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+              <button type="button" class="booking-trigger w-full sm:w-auto btn-terracotta font-semibold text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl gap-2 inline-flex items-center justify-center text-center" data-modality="Geral">
+                <span>Agendar Avaliação Inicial</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </button>
+
+              <a href="#localizacao" class="btn-outline-soft w-full sm:w-auto font-semibold text-xs sm:text-sm uppercase tracking-wider px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl inline-flex items-center justify-center gap-2 text-center">
+                <span class="material-symbols-outlined text-[18px] text-sage">location_on</span>
+                <span>Ver Localização & Horários</span>
+              </a>
+            </div>
+
+            <!-- Triangulação dos Três Pilares (1 col no mobile, 3 cols a partir de sm: 640px) -->
+            <div class="pt-2 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-3.5">
+              <div class="card-travertine-soft p-4 rounded-xl stagger-item min-w-0">
+                <span class="text-[10px] sm:text-[11px] font-bold text-sage-dark uppercase tracking-widest block">01 / FISIOTERAPIA</span>
+                <span class="font-serif text-base sm:text-lg text-graphite mt-0.5 block font-medium">Reabilitação & Alívio</span>
+                <p class="text-xs text-graphite-muted mt-1 leading-relaxed">Diagnóstico biomecânico criterioso, alívio de dores e cuidado individual 1:1.</p>
+              </div>
+
+              <div class="card-travertine-soft p-4 rounded-xl stagger-item min-w-0">
+                <span class="text-[10px] sm:text-[11px] font-bold text-terracotta uppercase tracking-widest block">02 / PILATES</span>
+                <span class="font-serif text-base sm:text-lg text-graphite mt-0.5 block font-medium">Aparelhos Nobres</span>
+                <p class="text-xs text-graphite-muted mt-1 leading-relaxed">Reformer, Cadillac e molas calibradas para postura e força profunda do core.</p>
+              </div>
+
+              <div class="card-travertine-soft p-4 rounded-xl stagger-item min-w-0">
+                <span class="text-[10px] sm:text-[11px] font-bold text-sage-dark uppercase tracking-widest block">03 / AÉREOS</span>
+                <span class="font-serif text-base sm:text-lg text-graphite mt-0.5 block font-medium">Lira & Tecido</span>
+                <p class="text-xs text-graphite-muted mt-1 leading-relaxed">Descompressão da coluna e expressão corporal em suspensão segura e gradual.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna da Direita (5 colunas): Fotografia Real do Estúdio -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="relative w-full rounded-2xl overflow-hidden bg-travertine shadow-md border border-black/5">
+            
+            <!-- Foto Real Principal: Lira Acrobática em Luz Natural -->
+            <div class="aspect-[4/3] w-full relative photo-zoom-container group cursor-pointer gallery-trigger" data-src="assets/images/aereos-lira-acrobatica.jpg" data-caption="Práticas Aéreas e Lira Acrobática no Espaço Mover: desenvolvimento de tônus, flexibilidade e descompressão da coluna.">
+              <img src="assets/images/aereos-lira-acrobatica.jpg" alt="Aluna praticando Lira Acrobática no Espaço Mover" class="w-full h-full object-cover object-center" />
+              
+              <!-- Gradiente sutil editorial -->
+              <div class="absolute inset-0 bg-gradient-to-t from-graphite/80 via-transparent to-transparent opacity-75 group-hover:opacity-65 transition-opacity"></div>
+              
+              <!-- Selo sobre a imagem -->
+              <div class="absolute top-3.5 left-3.5 sm:top-4 sm:left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-semibold text-graphite flex items-center gap-1.5 shadow-xs border border-black/5">
+                <span class="w-2 h-2 rounded-full bg-sage"></span>
+                <span>Registro Real do Estúdio</span>
+              </div>
+
+              <div class="absolute bottom-3.5 left-3.5 right-3.5 sm:bottom-4 sm:left-4 sm:right-4 text-white">
+                <span class="text-[11px] sm:text-xs uppercase tracking-widest text-terracotta-light font-semibold block">Movimento Suspenso</span>
+                <h3 class="font-serif text-xl sm:text-2xl font-light italic">Lira Acrobática & Tecido Aéreo</h3>
+              </div>
+            </div>
+
+            <!-- Mini Strip Bento sob a Foto Principal (Responsivo e sem estouros) -->
+            <div class="p-2.5 sm:p-3 bg-linen grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-2.5 border-t border-black/5">
+              
+              <!-- Mini Card 1: Pilates Reformer -->
+              <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white hover:bg-travertine-light transition-editorial cursor-pointer gallery-trigger border border-black/5 min-w-0" data-src="assets/images/pilates-reformer-kids.jpg" data-caption="Pilates em Aparelhos: alinhamento postural, alongamento e fortalecimento para crianças, adultos e terceira idade.">
+                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-lg overflow-hidden shrink-0">
+                  <img src="assets/images/pilates-reformer-kids.jpg" alt="Pilates no Reformer" class="w-full h-full object-cover" />
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-xs font-bold text-graphite block truncate">Pilates Aparelhos</span>
+                  <span class="text-[11px] text-graphite-muted block truncate">Kids a Idosos</span>
+                </div>
+              </div>
+
+              <!-- Mini Card 2: Fisioterapia nas Barras -->
+              <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white hover:bg-travertine-light transition-editorial cursor-pointer gallery-trigger border border-black/5 min-w-0" data-src="assets/images/fisioterapia-barras-paralelas.jpg" data-caption="Fisioterapia e Desenvolvimento Motor: fortalecimento funcional, equilíbrio e marcha nas barras paralelas.">
+                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-lg overflow-hidden shrink-0">
+                  <img src="assets/images/fisioterapia-barras-paralelas.jpg" alt="Fisioterapia funcional nas barras paralelas" class="w-full h-full object-cover" />
+                </div>
+                <div class="min-w-0 flex-1">
+                  <span class="text-xs font-bold text-graphite block truncate">Fisioterapia</span>
+                  <span class="text-[11px] text-graphite-muted block truncate">Reabilitação 1:1</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         LOCALIZAÇÃO & HORÁRIOS (GOOGLE MAPS)
+         ===================================================================== -->
+    <section id="localizacao" class="w-full bg-travertine-light py-12 sm:py-16 lg:py-24 border-y border-black/5">
+      <div class="px-4 sm:px-6 lg:px-8 max-w-[1360px] mx-auto space-y-8 sm:space-y-12">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 reveal-on-scroll">
+          <div class="max-w-2xl space-y-2">
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-terracotta">Onde Estamos</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-graphite tracking-tight">Localização & Como Chegar</h2>
+            <p class="text-sm sm:text-base text-graphite-muted">
+              Venha conhecer nosso estúdio no Jardim Paulista em Ribeirão Preto. Um refúgio dedicado à fisioterapia, pilates em aparelhos e práticas aéreas.
+            </p>
+          </div>
+
+          <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-black/5 text-xs font-medium text-graphite shadow-xs self-start md:self-auto">
+            <span class="material-symbols-outlined text-sage text-[18px]">location_on</span>
+            <span>Jardim Paulista · Ribeirão Preto / SP</span>
+          </div>
+        </div>
+
+        <!-- Grid: Detalhes do Endereço + Google Maps Interativo -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+          
+          <!-- Coluna 1 (5 colunas): Informações de Acesso & Horários -->
+          <div class="lg:col-span-5 flex flex-col justify-between space-y-5 sm:space-y-6 reveal-on-scroll">
+            
+            <div class="card-clean p-5 sm:p-7 rounded-2xl space-y-5">
+              
+              <!-- Endereço -->
+              <div class="flex items-start gap-3.5 sm:gap-4">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-terracotta-light text-terracotta flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-2xl">pin_drop</span>
+                </div>
+                <div class="space-y-0.5 sm:space-y-1 min-w-0">
+                  <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-graphite-muted">Endereço do Estúdio</span>
+                  <h3 class="font-serif text-lg sm:text-xl text-graphite font-medium">Espaço Mover</h3>
+                  <p class="text-xs sm:text-sm font-semibold text-graphite leading-snug">
+                    Travessa Rotary Clube, 48
+                  </p>
+                  <p class="text-xs text-graphite-muted">
+                    Jardim Paulista · Ribeirão Preto – SP, CEP 14090-019
+                  </p>
+                </div>
+              </div>
+
+              <!-- Divisor sutil -->
+              <div class="border-t border-black/5"></div>
+
+              <!-- Horários Detalhados da Grade -->
+              <div class="flex items-start gap-3.5 sm:gap-4">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-sage-light text-sage-dark flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-2xl">schedule</span>
+                </div>
+                <div class="space-y-2 w-full min-w-0">
+                  <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-graphite-muted">Horário de Atendimento</span>
+                  <div class="text-xs text-graphite space-y-1.5 bg-travertine-light p-3 sm:p-3.5 rounded-xl border border-black/5">
+                    <div class="flex justify-between items-center py-1 border-b border-black/5 gap-2">
+                      <span class="font-medium text-graphite">Seg, Qua e Sex:</span>
+                      <span class="font-bold text-sage-dark whitespace-nowrap">07:30 às 11:30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1 border-b border-black/5 gap-2">
+                      <span class="font-medium text-graphite">Ter e Qui:</span>
+                      <span class="font-bold text-terracotta whitespace-nowrap">19:00 às 21:00</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1 border-b border-black/5 gap-2">
+                      <span class="font-medium text-graphite">Sábados:</span>
+                      <span class="font-bold text-graphite whitespace-nowrap">08:00 às 12:00</span>
+                    </div>
+                    <div class="flex justify-between items-center py-0.5 text-graphite-muted gap-2">
+                      <span>Domingos:</span>
+                      <span class="italic">Fechado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Divisor sutil -->
+              <div class="border-t border-black/5"></div>
+
+              <!-- Contatos Diretos com prevenção de estouro -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-0.5">
+                <!-- WhatsApp -->
+                <div class="flex items-start gap-3 min-w-0">
+                  <div class="w-9 h-9 rounded-lg bg-sage-light text-sage-dark flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-lg">chat</span>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-graphite-muted block">WhatsApp</span>
+                    <a href="https://wa.me/5516991811461?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Espa%C3%A7o%20Mover." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-terracotta hover:underline block truncate">
+                      (16) 99181-1461
+                    </a>
+                  </div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="flex items-start gap-3 min-w-0">
+                  <div class="w-9 h-9 rounded-lg bg-terracotta-light text-terracotta flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-lg">mail</span>
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-graphite-muted block">E-mail</span>
+                    <a href="mailto:basfisio@yahoo.com.br" class="text-xs font-semibold text-graphite hover:text-terracotta transition-colors truncate block">
+                      basfisio@yahoo.com.br
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Botão Único e Elegante: Abrir Rota no Google Maps -->
+            <div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Travessa+Rotary+Clube,+48+-+Jardim+Paulista,+Ribeir%C3%A3o+Preto+-+SP" target="_blank" rel="noopener noreferrer" class="w-full btn-terracotta font-bold text-xs uppercase tracking-wider py-4 px-6 rounded-xl flex items-center justify-center gap-2.5 text-center group">
+                <span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">map</span>
+                <span>Abrir Rota no Google Maps</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Coluna 2 (7 colunas): Google Maps Embed Interativo com Altura Fluida -->
+          <div class="lg:col-span-7 rounded-2xl overflow-hidden card-clean relative flex flex-col min-h-[320px] sm:min-h-[400px] lg:min-h-full reveal-on-scroll">
+            <div class="p-3 sm:p-3.5 bg-white border-b border-black/5 flex items-center justify-between text-xs text-graphite-muted">
+              <span class="flex items-center gap-2 font-semibold text-graphite text-[11px] sm:text-xs truncate">
+                <span class="w-2 h-2 rounded-full bg-sage shrink-0"></span>
+                <span class="truncate">Travessa Rotary Clube, 48 – Jardim Paulista, Ribeirão Preto/SP</span>
+              </span>
+              <span class="text-[11px] hidden sm:inline text-graphite-soft shrink-0 ml-2">Visualização Dinâmica</span>
+            </div>
+            
+            <div class="w-full flex-1 relative min-h-[300px] sm:min-h-[380px] lg:min-h-[440px]">
+              <iframe 
+                title="Localização do Espaço Mover - Travessa Rotary Clube 48, Ribeirão Preto"
+                src="https://maps.google.com/maps?q=Travessa+Rotary+Clube,+48+-+Jardim+Paulista,+Ribeir%C3%A3o+Preto+-+SP,+14090-019&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] border-0" 
+                loading="lazy" 
+                allowfullscreen="" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SEÇÃO: PARA QUEM É O ESPAÇO MOVER? (4 SEGMENTOS DE CUIDADO)
+         ===================================================================== -->
+    <section id="publico" class="w-full bg-linen py-12 sm:py-16 lg:py-24">
+      <div class="px-4 sm:px-6 lg:px-8 max-w-[1360px] mx-auto space-y-8 sm:space-y-12">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-2 reveal-on-scroll">
+          <span class="text-xs font-bold uppercase tracking-[0.18em] text-terracotta">Da Infância à Maturidade</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-graphite tracking-tight">Para Quem é o Espaço Mover?</h2>
+          <p class="text-sm sm:text-base text-graphite-muted">
+            Adaptamos cada exercício e estímulo às demandas e momentos específicos do seu corpo.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          
+          <!-- Card 1: Infantil & Kids -->
+          <div class="card-clean p-5 sm:p-6 rounded-2xl space-y-4 flex flex-col justify-between stagger-item">
+            <div class="space-y-3">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-terracotta-light text-terracotta flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">child_care</span>
+              </div>
+              <h3 class="font-serif text-lg sm:text-xl text-graphite font-medium">Infantil & Kids</h3>
+              <p class="text-xs text-graphite-muted leading-relaxed">
+                Pilates Kids e Aéreos para desenvolver postura correta, coordenação psicomotora, foco e autoconfiança de maneira lúdica e segura.
+              </p>
+            </div>
+            <span class="text-[11px] font-bold text-terracotta uppercase tracking-wider block pt-3 border-t border-black/5">
+              Postura & Ludicidade
+            </span>
+          </div>
+
+          <!-- Card 2: Adultos & Rotina -->
+          <div class="card-clean p-5 sm:p-6 rounded-2xl space-y-4 flex flex-col justify-between stagger-item">
+            <div class="space-y-3">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-sage-light text-sage-dark flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">self_improvement</span>
+              </div>
+              <h3 class="font-serif text-lg sm:text-xl text-graphite font-medium">Adultos & Rotina</h3>
+              <p class="text-xs text-graphite-muted leading-relaxed">
+                Alívio de dores posturais causadas por longas horas de trabalho sentado, descompressão do estresse diário e ganho de tônus global.
+              </p>
+            </div>
+            <span class="text-[11px] font-bold text-sage-dark uppercase tracking-wider block pt-3 border-t border-black/5">
+              Descompressão & Tônus
+            </span>
+          </div>
+
+          <!-- Card 3: Melhor Idade -->
+          <div class="card-clean p-5 sm:p-6 rounded-2xl space-y-4 flex flex-col justify-between stagger-item">
+            <div class="space-y-3">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-terracotta-light text-terracotta flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">elderly</span>
+              </div>
+              <h3 class="font-serif text-lg sm:text-xl text-graphite font-medium">Melhor Idade</h3>
+              <p class="text-xs text-graphite-muted leading-relaxed">
+                Mobilidade articular, prevenção de quedas, refinamento do equilíbrio e preservação da autonomia física com exercícios sem impacto.
+              </p>
+            </div>
+            <span class="text-[11px] font-bold text-terracotta uppercase tracking-wider block pt-3 border-t border-black/5">
+              Equilíbrio & Longevidade
+            </span>
+          </div>
+
+          <!-- Card 4: Reabilitação & Fisioterapia -->
+          <div class="card-clean p-5 sm:p-6 rounded-2xl space-y-4 flex flex-col justify-between stagger-item">
+            <div class="space-y-3">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-sage-light text-sage-dark flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">healing</span>
+              </div>
+              <h3 class="font-serif text-lg sm:text-xl text-graphite font-medium">Reabilitação</h3>
+              <p class="text-xs text-graphite-muted leading-relaxed">
+                Recuperação cuidadosa de hérnias de disco, lombalgias, pós-operatórios e lesões articulares com supervisão fisioterapêutica individualizada.
+              </p>
+            </div>
+            <span class="text-[11px] font-bold text-sage-dark uppercase tracking-wider block pt-3 border-t border-black/5">
+              Cuidado Biomecânico 1:1
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         INSTALAÇÕES E EQUIPAMENTOS (GALERIA FOTOGRÁFICA REAL)
+         ===================================================================== -->
+    <section id="galeria" class="w-full bg-travertine-light py-12 sm:py-16 lg:py-24 border-y border-black/5">
+      <div class="px-4 sm:px-6 lg:px-8 max-w-[1360px] mx-auto space-y-8 sm:space-y-12">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 reveal-on-scroll">
+          <div class="max-w-2xl space-y-2">
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-sage-dark">Espaço Físico & Detalhes</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-graphite tracking-tight">Galeria de Vivências & Instalações</h2>
+            <p class="text-sm sm:text-base text-graphite-muted">
+              Um ambiente arejado, acolhedor e equipado com aparelhos em madeira nobre e estruturas com máxima segurança técnica.
+            </p>
+          </div>
+
+          <span class="text-xs font-semibold text-graphite-muted flex items-center gap-1.5 bg-white px-3.5 py-1.5 rounded-full border border-black/5 shadow-xs self-start md:self-auto">
+            <span class="material-symbols-outlined text-[18px] text-terracotta">touch_app</span>
+            Toque nas imagens para visualização ampliada
+          </span>
+        </div>
+
+        <!-- Grid Bento Box Fotográfico Totalmente Responsivo -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
+          
+          <!-- Foto 1: Lira Acrobática (Destaque Horizontal 7 colunas em telas médias/grandes) -->
+          <div class="md:col-span-7 card-clean rounded-2xl overflow-hidden group cursor-pointer gallery-trigger stagger-item" data-src="assets/images/aereos-lira-acrobatica.jpg" data-caption="Aluna praticando Lira Acrobática e Tecido Aéreo no Espaço Mover. Desenvolvimento de flexibilidade, tônus e autoconfiança no ar.">
+            <div class="h-64 sm:h-80 md:h-96 w-full relative overflow-hidden photo-zoom-container">
+              <img src="assets/images/aereos-lira-acrobatica.jpg" alt="Lira Acrobática e Tecido no Espaço Mover" class="w-full h-full object-cover object-center" />
+              <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent opacity-0 group-hover:opacity-100 transition-editorial flex items-end p-5 sm:p-6">
+                <div class="text-white">
+                  <span class="text-xs font-bold uppercase tracking-wider text-sage-light block">Aéreos & Acrobacias</span>
+                  <h4 class="font-serif text-xl sm:text-2xl font-light">Lira Acrobática e Tecido Suspenso</h4>
+                  <p class="text-xs text-linen mt-1">Consciência espacial e descompressão articular com leveza e segurança.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3.5 sm:p-4 flex items-center justify-between text-xs text-graphite-muted border-t border-black/5 bg-white">
+              <span class="font-bold text-graphite truncate mr-2">Lira Acrobática e Tecido</span>
+              <span class="text-terracotta font-semibold flex items-center gap-1 shrink-0">
+                <span>Ampliar</span>
+                <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Foto 2: Pilates Reformer Kids (5 colunas) -->
+          <div class="md:col-span-5 card-clean rounded-2xl overflow-hidden group cursor-pointer gallery-trigger stagger-item" data-src="assets/images/pilates-reformer-kids.jpg" data-caption="Pilates em Aparelho Reformer com aluna no Espaço Mover. Fortalecimento, equilíbrio e postura desde cedo.">
+            <div class="h-64 sm:h-80 md:h-96 w-full relative overflow-hidden photo-zoom-container">
+              <img src="assets/images/pilates-reformer-kids.jpg" alt="Aluna no Pilates Reformer" class="w-full h-full object-cover object-center" />
+              <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent opacity-0 group-hover:opacity-100 transition-editorial flex items-end p-5 sm:p-6">
+                <div class="text-white">
+                  <span class="text-xs font-bold uppercase tracking-wider text-terracotta-light block">Pilates Kids</span>
+                  <h4 class="font-serif text-xl sm:text-2xl font-light">Concentração no Reformer</h4>
+                  <p class="text-xs text-linen mt-1">Postura alinhada e fortalecimento precoce com molas de resistência suave.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3.5 sm:p-4 flex items-center justify-between text-xs text-graphite-muted border-t border-black/5 bg-white">
+              <span class="font-bold text-graphite truncate mr-2">Pilates em Aparelhos (Reformer)</span>
+              <span class="text-terracotta font-semibold flex items-center gap-1 shrink-0">
+                <span>Ampliar</span>
+                <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Foto 3: Fisioterapia nas Barras Paralelas (6 colunas) -->
+          <div class="md:col-span-6 card-clean rounded-2xl overflow-hidden group cursor-pointer gallery-trigger stagger-item" data-src="assets/images/fisioterapia-barras-paralelas.jpg" data-caption="Exercício funcional nas barras paralelas para desenvolvimento psicomotor, coordenação e força no Espaço Mover.">
+            <div class="h-64 sm:h-80 md:h-96 w-full relative overflow-hidden photo-zoom-container">
+              <img src="assets/images/fisioterapia-barras-paralelas.jpg" alt="Treino funcional nas barras paralelas" class="w-full h-full object-cover object-center" />
+              <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent opacity-0 group-hover:opacity-100 transition-editorial flex items-end p-5 sm:p-6">
+                <div class="text-white">
+                  <span class="text-xs font-bold uppercase tracking-wider text-sage-light block">Reabilitação & Coordenação</span>
+                  <h4 class="font-serif text-xl sm:text-2xl font-light">Estabilidade nas Barras Paralelas</h4>
+                  <p class="text-xs text-linen mt-1">Fortalecimento escapular, ativação postural e controle de marcha.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3.5 sm:p-4 flex items-center justify-between text-xs text-graphite-muted border-t border-black/5 bg-white">
+              <span class="font-bold text-graphite truncate mr-2">Desenvolvimento Motor & Barras</span>
+              <span class="text-terracotta font-semibold flex items-center gap-1 shrink-0">
+                <span>Ampliar</span>
+                <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Foto 4: Reabilitação e Mobilidade no Espaldar (6 colunas) -->
+          <div class="md:col-span-6 card-clean rounded-2xl overflow-hidden group cursor-pointer gallery-trigger stagger-item" data-src="assets/images/reabilitacao-espaldar.jpg" data-caption="Exercícios de mobilidade vertebral e alongamento no espaldar para postura e longevidade no Espaço Mover.">
+            <div class="h-64 sm:h-80 md:h-96 w-full relative overflow-hidden photo-zoom-container">
+              <img src="assets/images/reabilitacao-espaldar.jpg" alt="Exercício no espaldar para coluna e mobilidade" class="w-full h-full object-cover object-center" />
+              <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent opacity-0 group-hover:opacity-100 transition-editorial flex items-end p-5 sm:p-6">
+                <div class="text-white">
+                  <span class="text-xs font-bold uppercase tracking-wider text-terracotta-light block">Mobilidade & Coluna</span>
+                  <h4 class="font-serif text-xl sm:text-2xl font-light">Alongamento no Espaldar</h4>
+                  <p class="text-xs text-linen mt-1">Flexibilidade torácica, ombros livres de tensão e descompressão lombar.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3.5 sm:p-4 flex items-center justify-between text-xs text-graphite-muted border-t border-black/5 bg-white">
+              <span class="font-bold text-graphite truncate mr-2">Mobilidade Ativa no Espaldar</span>
+              <span class="text-terracotta font-semibold flex items-center gap-1 shrink-0">
+                <span>Ampliar</span>
+                <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         ORIENTAÇÃO DE PRÁTICAS (INTERATIVIDADE SOB MEDIDA)
+         ===================================================================== -->
+    <section id="orientacao" class="w-full bg-linen py-12 sm:py-16 lg:py-24">
+      <div class="px-4 sm:px-6 lg:px-8 max-w-[980px] mx-auto space-y-8 sm:space-y-10">
+        
+        <div class="text-center space-y-2.5 sm:space-y-3 reveal-on-scroll">
+          <span class="text-xs font-bold uppercase tracking-[0.18em] text-terracotta">Orientação Sob Medida</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-graphite">Qual prática é ideal para o seu momento?</h2>
+          <p class="text-sm sm:text-base text-graphite-muted max-w-xl mx-auto">
+            Toque no seu objetivo principal abaixo para ver a indicação e os benefícios recomendados pela nossa equipe:
+          </p>
+        </div>
+
+        <!-- Seletor em Chips Interativos Modernos (Fluido em telas estreitas) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 reveal-on-scroll">
+          <button type="button" class="practice-chip active px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5" data-practice="reabilitacao">
+            <span class="material-symbols-outlined text-[17px]">healing</span>
+            <span>Reabilitação & Dores</span>
+          </button>
+          
+          <button type="button" class="practice-chip px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5" data-practice="pilates">
+            <span class="material-symbols-outlined text-[17px]">fitness_center</span>
+            <span>Pilates em Aparelhos</span>
+          </button>
+
+          <button type="button" class="practice-chip px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5" data-practice="aereos">
+            <span class="material-symbols-outlined text-[17px]">paragliding</span>
+            <span>Lira & Tecido Aéreo</span>
+          </button>
+
+          <button type="button" class="practice-chip px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5" data-practice="kids">
+            <span class="material-symbols-outlined text-[17px]">child_care</span>
+            <span>Pilates Kids</span>
+          </button>
+
+          <button type="button" class="practice-chip px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5" data-practice="longevidade">
+            <span class="material-symbols-outlined text-[17px]">elderly</span>
+            <span>Melhor Idade</span>
+          </button>
+        </div>
+
+        <!-- Painel de Detalhes da Recomendação (Responsivo) -->
+        <div id="recommendation-display" class="card-clean p-5 sm:p-8 lg:p-9 rounded-2xl sm:rounded-3xl transition-editorial space-y-5 sm:space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-black/5 pb-4">
+            <span id="rec-badge" class="text-xs font-bold uppercase tracking-wider text-sage-dark bg-sage-light px-3.5 py-1.5 rounded-full inline-block w-fit">
+              Cuidado Fisioterapêutico 1:1
+            </span>
+            <span class="text-xs text-graphite-muted flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px] text-terracotta">verified</span>
+              Avaliação Inicial Individualizada
+            </span>
+          </div>
+
+          <div class="space-y-2 sm:space-y-3">
+            <h3 id="rec-title" class="font-serif text-2xl sm:text-3xl text-graphite font-normal">
+              Fisioterapia Clínica & Reabilitação Funcional
+            </h3>
+            <p id="rec-desc" class="text-sm sm:text-base text-graphite-muted leading-relaxed">
+              Indicado para quem convive com dores crônicas, hérnias de disco, desvios na coluna ou está em recuperação pós-cirúrgica e lesões ortopédicas.
+            </p>
+          </div>
+
+          <div class="bg-travertine-light p-4 sm:p-5 rounded-2xl border border-black/5 space-y-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-graphite block">Benefícios Principais:</span>
+            <ul id="rec-benefits" class="space-y-2">
+              <li class="flex items-start gap-2.5 text-xs sm:text-sm text-graphite-muted">
+                <span class="material-symbols-outlined text-[18px] text-terracotta shrink-0 mt-0.5">check_circle</span>
+                <span>Avaliação biomecânica completa dos seus padrões de movimento</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-xs sm:text-sm text-graphite-muted">
+                <span class="material-symbols-outlined text-[18px] text-terracotta shrink-0 mt-0.5">check_circle</span>
+                <span>Terapia manual especializada com alívio progressivo da dor</span>
+              </li>
+              <li class="flex items-start gap-2.5 text-xs sm:text-sm text-graphite-muted">
+                <span class="material-symbols-outlined text-[18px] text-terracotta shrink-0 mt-0.5">check_circle</span>
+                <span>Atendimento individualizado e seguro para restabelecer sua mobilidade</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <button id="rec-action-btn" type="button" class="booking-trigger w-full sm:w-auto btn-terracotta font-bold text-xs uppercase tracking-wider px-6 sm:px-7 py-3.5 rounded-xl flex items-center justify-center gap-2 text-center" data-modality="Fisioterapia Clínica">
+              <span>Agendar com Essa Modalidade</span>
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+            </button>
+            <span class="text-xs text-graphite-muted text-center sm:text-right">
+              Atendimento no Jardim Paulista · Ribeirão Preto
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         PERGUNTAS FREQUENTES (FAQ ACCORDION)
+         ===================================================================== -->
+    <section id="faq" class="w-full bg-travertine-light py-12 sm:py-16 lg:py-24 border-t border-black/5">
+      <div class="px-4 sm:px-6 lg:px-8 max-w-[860px] mx-auto space-y-8 sm:space-y-10">
+        
+        <div class="text-center space-y-2.5 sm:space-y-3 reveal-on-scroll">
+          <span class="text-xs font-bold uppercase tracking-[0.18em] text-sage-dark">Tire Suas Dúvidas</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-graphite">Perguntas Frequentes</h2>
+          <p class="text-sm text-graphite-muted">
+            Tudo o que você precisa saber antes de iniciar sua jornada no Espaço Mover.
+          </p>
+        </div>
+
+        <div class="space-y-3 reveal-on-scroll">
+          
+          <!-- FAQ 1 -->
+          <div class="accordion-item bg-white rounded-xl border border-black/5 overflow-hidden shadow-xs">
+            <button class="accordion-trigger w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-serif text-base sm:text-lg text-graphite font-medium hover:text-terracotta transition-colors">
+              <span>Preciso ter experiência prévia para fazer práticas aéreas (lira ou tecido)?</span>
+              <span class="material-symbols-outlined accordion-icon text-graphite-muted transition-transform duration-300 shrink-0">expand_more</span>
+            </button>
+            <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-graphite-muted leading-relaxed">
+              Não! A grande maioria dos nossos alunos nunca teve contato anterior com artes circenses ou acrobacias. Nossas aulas são estritamente progressivas: começamos bem perto do solo, com exercícios de adaptação de pegada e fortalecimento muscular básico, sempre com colchões de proteção de alta densidade e supervisão atenta.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item bg-white rounded-xl border border-black/5 overflow-hidden shadow-xs">
+            <button class="accordion-trigger w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-serif text-base sm:text-lg text-graphite font-medium hover:text-terracotta transition-colors">
+              <span>A partir de qual idade as crianças podem fazer Pilates ou Aéreos?</span>
+              <span class="material-symbols-outlined accordion-icon text-graphite-muted transition-transform duration-300 shrink-0">expand_more</span>
+            </button>
+            <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-graphite-muted leading-relaxed">
+              Recebemos crianças a partir dos 4 anos (conforme a modalidade e a avaliação inicial). Os exercícios infantis são conduzidos de forma lúdica, respeitando a anatomia em crescimento, estimulando postura alinhada, equilíbrio e foco.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item bg-white rounded-xl border border-black/5 overflow-hidden shadow-xs">
+            <button class="accordion-trigger w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-serif text-base sm:text-lg text-graphite font-medium hover:text-terracotta transition-colors">
+              <span>Tenho dor na coluna ou hérnia de disco. Posso fazer Pilates?</span>
+              <span class="material-symbols-outlined accordion-icon text-graphite-muted transition-transform duration-300 shrink-0">expand_more</span>
+            </button>
+            <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-graphite-muted leading-relaxed">
+              Com certeza! O Pilates em aparelhos é referência mundial na ortopedia para reabilitação de hérnias e lombalgias. Como nosso espaço conta com formação fisioterapêutica, os exercícios são adaptados às suas contraindicações específicas e executados com molas de resistência milimetricamente ajustadas.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item bg-white rounded-xl border border-black/5 overflow-hidden shadow-xs">
+            <button class="accordion-trigger w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-serif text-base sm:text-lg text-graphite font-medium hover:text-terracotta transition-colors">
+              <span>Quantos alunos ficam por horário nas aulas de Pilates?</span>
+              <span class="material-symbols-outlined accordion-icon text-graphite-muted transition-transform duration-300 shrink-0">expand_more</span>
+            </button>
+            <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-graphite-muted leading-relaxed">
+              Trabalhamos com turmas pequenas (média de 3 a 4 alunos por instrutor), além da opção de atendimento exclusivo 1:1. Isso garante acompanhamento minucioso de cada detalhe da sua postura e respiração.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item bg-white rounded-xl border border-black/5 overflow-hidden shadow-xs">
+            <button class="accordion-trigger w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-serif text-base sm:text-lg text-graphite font-medium hover:text-terracotta transition-colors">
+              <span>Como funciona a primeira avaliação de Fisioterapia?</span>
+              <span class="material-symbols-outlined accordion-icon text-graphite-muted transition-transform duration-300 shrink-0">expand_more</span>
+            </button>
+            <div class="accordion-content px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-graphite-muted leading-relaxed">
+              A avaliação inicial dura cerca de 60 minutos. Realizamos anamnese aprofundada do histórico clínico, exames de flexibilidade, mobilidade articular e testes específicos. A partir desses dados, estruturamos o seu protocolo terapêutico individualizado.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SEÇÃO DE AGENDAMENTO E CONTATO DIRETO
+         ===================================================================== -->
+    <section class="w-full bg-linen py-12 sm:py-16 lg:py-24 relative overflow-hidden">
+      <div class="px-4 sm:px-6 lg:px-8 max-w-[1100px] mx-auto">
+        <div class="card-clean p-6 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 reveal-on-scroll">
+          
+          <div class="space-y-2.5 sm:space-y-3 max-w-xl text-left">
+            <span class="text-xs font-bold uppercase tracking-[0.18em] text-terracotta block">
+              Atendimento com Horário Marcado
+            </span>
+
+            <h3 class="font-serif text-2xl sm:text-3xl lg:text-4xl text-graphite font-medium leading-tight">
+              Dê o primeiro passo para uma vida com mais movimento e sem dor.
+            </h3>
+
+            <p class="text-sm sm:text-base text-graphite-muted leading-relaxed">
+              Fale conosco pelo WhatsApp ou agende sua avaliação para conhecer nosso espaço no Jardim Paulista em Ribeirão Preto e encontrar a prática ideal para o seu corpo.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 shrink-0 w-full lg:w-auto">
+            <button type="button" class="booking-trigger w-full sm:w-auto btn-terracotta font-bold text-xs uppercase tracking-wider px-7 sm:px-8 py-4 rounded-xl text-center flex items-center justify-center gap-2" data-modality="Geral">
+              <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+              <span>Agendar Minha Avaliação</span>
+            </button>
+
+            <a href="https://wa.me/5516991811461?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20e%20fisioterapia%20no%20Espa%C3%A7o%20Mover." target="_blank" rel="noopener noreferrer" class="btn-outline-soft w-full sm:w-auto font-semibold text-xs uppercase tracking-wider px-6 sm:px-7 py-4 rounded-xl text-center flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-[18px] text-sage">chat</span>
+              <span>Falar no WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       RODAPÉ EDITORIAL TOTALMENTE RESPONSIVO
+       ===================================================================== -->
+  <footer id="sobre" class="w-full bg-travertine-light text-graphite border-t border-black/5">
+    <div class="w-full px-4 sm:px-6 lg:px-8 max-w-[1360px] mx-auto py-12 sm:py-16">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10">
+        
+        <!-- Col 1: Marca & Manifesto -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-white p-1 border border-black/10 flex items-center justify-center shadow-xs shrink-0">
+              <img src="assets/images/logo.png" alt="Espaço Mover Logo" class="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span class="font-serif text-xl sm:text-2xl font-normal tracking-tight text-graphite leading-none block">
+                Espaço Mover
+              </span>
+              <span class="text-[11px] sm:text-xs font-bold text-sage-dark tracking-wider uppercase">
+                Fisioterapia · Pilates · Aéreos
+              </span>
+            </div>
+          </div>
+
+          <p class="text-xs sm:text-sm text-graphite-muted max-w-md leading-relaxed">
+            Um refúgio terapêutico e funcional dedicado à reabilitação biomecânica, precisão do pilates em aparelhos e expressividade das práticas aéreas em um ambiente acolhedor e humanizado.
+          </p>
+
+          <div class="pt-1 text-xs text-graphite-muted flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-sage"></span>
+            <span>Atendimento acolhedor para todas as idades</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Endereço & Contato -->
+        <div class="lg:col-span-4 space-y-3 text-xs sm:text-sm">
+          <span class="font-bold uppercase tracking-wider text-graphite text-xs block">Contato & Atendimento</span>
+          <p class="text-graphite font-medium leading-relaxed">
+            Travessa Rotary Clube, 48<br />
+            <span class="text-graphite-muted font-normal">Jardim Paulista, Ribeirão Preto – SP, CEP 14090-019</span>
+          </p>
+
+          <div class="space-y-1.5 pt-2 text-graphite-muted">
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px] text-terracotta shrink-0">schedule</span>
+              <span>Seg, Qua, Sex: 07:30–11:30 | Ter, Qui: 19:00–21:00</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px] text-terracotta shrink-0">schedule</span>
+              <span>Sábados: 08:00 às 12:00</span>
+            </p>
+            <p class="flex items-center gap-2 pt-1 font-semibold text-graphite">
+              <span class="material-symbols-outlined text-[18px] text-sage shrink-0">chat</span>
+              <a href="https://wa.me/5516991811461" target="_blank" rel="noopener noreferrer" class="hover:text-terracotta transition-colors truncate">WhatsApp: (16) 99181-1461</a>
+            </p>
+            <p class="flex items-center gap-2 text-graphite-muted">
+              <span class="material-symbols-outlined text-[18px] text-terracotta shrink-0">mail</span>
+              <a href="mailto:basfisio@yahoo.com.br" class="hover:text-terracotta transition-colors truncate">basfisio@yahoo.com.br</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Col 3: Navegação Rápida -->
+        <div class="lg:col-span-3 space-y-3 text-xs sm:text-sm">
+          <span class="font-bold uppercase tracking-wider text-graphite text-xs block">Navegação</span>
+          <ul class="space-y-2 text-graphite-muted">
+            <li><a href="#localizacao" class="hover:text-terracotta transition-colors">Localização & Como Chegar</a></li>
+            <li><a href="#publico" class="hover:text-terracotta transition-colors">Para Quem é o Espaço</a></li>
+            <li><a href="#galeria" class="hover:text-terracotta transition-colors">Instalações do Espaço</a></li>
+            <li><a href="#orientacao" class="hover:text-terracotta transition-colors">Orientação de Práticas</a></li>
+            <li><a href="#faq" class="hover:text-terracotta transition-colors">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-10 sm:mt-12 pt-6 border-t border-black/5 flex flex-col sm:flex-row items-center justify-between text-xs text-graphite-muted gap-3 text-center sm:text-left">
+        <p>© 2026 Espaço Mover. Todos os direitos reservados.</p>
+        <p class="text-[11px]">Desenvolvido com carinho para o seu bem-estar, equilíbrio e movimento.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       BOTÃO FLUTUANTE DO WHATSAPP (COM SAFE-AREA INSET PARA CELULARES)
+       ===================================================================== -->
+  <a href="https://wa.me/5516991811461?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20e%20atendimentos%20no%20Espa%C3%A7o%20Mover." target="_blank" rel="noopener noreferrer" class="whatsapp-float-editorial group" aria-label="Fale conosco no WhatsApp">
+    <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <span class="text-xs font-semibold hidden sm:inline-block">Fale Conosco</span>
+  </a>
+
+  <!-- =====================================================================
+       LIGHTBOX MODAL (VISUALIZADOR FOTOGRÁFICO COM FECHAMENTO RESPONSIVO)
+       ===================================================================== -->
+  <div id="lightbox-modal" class="editorial-modal fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-graphite/85 backdrop-blur-sm">
+    <div class="relative max-w-4xl w-full flex flex-col items-center">
+      <button id="lightbox-close" type="button" class="absolute -top-12 right-0 text-white hover:text-travertine p-2 bg-black/40 sm:bg-transparent rounded-full sm:rounded-none z-10 flex items-center justify-center" aria-label="Fechar Imagem">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+      <div class="rounded-2xl overflow-hidden shadow-2xl bg-black max-h-[78vh] sm:max-h-[82vh] flex items-center justify-center border border-white/10 w-full">
+        <img id="lightbox-img" src="" alt="" class="max-h-[75vh] w-auto max-w-full object-contain" />
+      </div>
+      <p id="lightbox-caption" class="text-linen text-xs sm:text-sm text-center mt-3 max-w-xl font-light px-2"></p>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       BOOKING MODAL (AGENDAMENTO RÁPIDO COM ROLAGEM SEGURA NO MOBILE)
+       ===================================================================== -->
+  <div id="booking-modal" class="editorial-modal fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-graphite/75 backdrop-blur-sm">
+    <div class="bg-linen rounded-2xl sm:rounded-3xl p-5 sm:p-8 max-w-lg w-full card-clean relative max-h-[92vh] overflow-y-auto overscroll-contain">
+      
+      <button id="booking-close" type="button" class="absolute top-4 right-4 sm:top-5 sm:right-5 text-graphite-muted hover:text-graphite p-1.5 rounded-full hover:bg-black/5 transition-colors" aria-label="Fechar Modal">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+
+      <div class="space-y-2 mb-5 sm:mb-6 text-left pr-6">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden bg-white border border-black/10 p-0.5 shrink-0">
+            <img src="assets/images/logo.png" alt="Logo" class="w-full h-full object-contain" />
+          </div>
+          <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-sage-dark">Espaço Mover · Agendamento</span>
+        </div>
+        <h3 class="font-serif text-2xl sm:text-3xl text-graphite font-normal">Reserve sua Avaliação</h3>
+        <p class="text-xs text-graphite-muted">
+          Preencha os campos abaixo para direcionarmos ao WhatsApp com seus dados preparados:
+        </p>
+      </div>
+
+      <form id="booking-form" class="space-y-3.5 sm:space-y-4 text-left">
+        <div>
+          <label for="booking-name" class="block text-xs font-bold uppercase tracking-wider text-graphite mb-1.5">Seu Nome Completo</label>
+          <input type="text" id="booking-name" required placeholder="Ex: Maria Clara" class="w-full bg-white border border-black/10 rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-sm text-graphite focus:outline-none focus:border-terracotta transition-editorial" />
+        </div>
+
+        <div>
+          <label for="booking-service" class="block text-xs font-bold uppercase tracking-wider text-graphite mb-1.5">Modalidade de Interesse</label>
+          <select id="booking-service" class="w-full bg-white border border-black/10 rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-sm text-graphite focus:outline-none focus:border-terracotta transition-editorial">
+            <option value="Pilates em Aparelhos">Pilates em Aparelhos</option>
+            <option value="Fisioterapia Clínica">Fisioterapia Clínica & Reabilitação</option>
+            <option value="Aéreos (Lira & Tecido)">Aéreos (Lira & Tecido)</option>
+            <option value="Pilates Kids">Pilates Kids (Infantil)</option>
+            <option value="Melhor Idade">Pilates / Fisioterapia para Melhor Idade</option>
+            <option value="Geral">Dúvida / Avaliação Geral</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="booking-age" class="block text-xs font-bold uppercase tracking-wider text-graphite mb-1.5">Quem irá praticar?</label>
+          <select id="booking-age" class="w-full bg-white border border-black/10 rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-sm text-graphite focus:outline-none focus:border-terracotta transition-editorial">
+            <option value="Adulto">Adulto</option>
+            <option value="Criança / Infantil">Criança / Infantil</option>
+            <option value="Adolescente">Adolescente</option>
+            <option value="Melhor Idade / Idoso">Melhor Idade / Idoso</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="booking-notes" class="block text-xs font-bold uppercase tracking-wider text-graphite mb-1.5">Alguma dor, objetivo ou observação? (Opcional)</label>
+          <textarea id="booking-notes" rows="2" placeholder="Ex: Dores na lombar, preferência por horário matutino..." class="w-full bg-white border border-black/10 rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-sm text-graphite focus:outline-none focus:border-terracotta transition-editorial"></textarea>
+        </div>
+
+        <button type="submit" class="w-full btn-terracotta font-bold text-xs uppercase tracking-wider py-3.5 sm:py-4 rounded-xl flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">send</span>
+          <span>Enviar pelo WhatsApp</span>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Scripts Interativos -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
