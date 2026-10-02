@@ -1,37 +1,160 @@
 /* ==========================================================================
-   Espaço Mover - Sistema de Design Editorial & Naturalismo Material
+   Espaço Mover: Sistema de Design Editorial e Acolhedor
    Fisioterapia Clínica, Pilates em Aparelhos e Modalidades Aéreas
-   Ribeirão Preto / SP
+   Ribeirão Preto, SP
    ========================================================================== */
 
 :root {
-  /* Paleta Mineral, Têxtil e Botânica Refinada (Tons Naturais de Estúdio de Saúde) */
-  --color-linen: #FAF9F5;          /* Linho Natural Calmo */
-  --color-porcelain: #FFFFFF;      /* Superfície Clara */
-  --color-travertine: #EFECE6;     /* Travertino Suave */
-  --color-travertine-light: #F6F4EF;
-  --color-travertine-dark: #E2DDD5;
-  
-  --color-graphite: #212322;       /* Grafite Profundo / Tipografia Principal */
-  --color-graphite-muted: #565A55; /* Texto Secundário Editorial com alto contraste */
-  --color-graphite-soft: #858B84;  /* Detalhes e legendas */
-  --color-border-subtle: rgba(33, 35, 34, 0.08); /* Borda ultra-delicada e orgânica */
-  --color-border-hover: rgba(194, 110, 69, 0.35);
-  
-  --color-terracotta: #C26E45;     /* Terracota Queimada Nobre (Ação e Acolhimento) */
-  --color-terracotta-dark: #A85A33;
-  --color-terracotta-light: #F9F2ED;
-  --color-terracotta-glow: rgba(194, 110, 69, 0.18);
-  
-  --color-sage: #778B74;           /* Sálvia Botânica Calmante */
-  --color-sage-dark: #586B56;
-  --color-sage-light: #EEF3ED;
-  --color-sage-glow: rgba(119, 139, 116, 0.2);
+  /* Paleta Oficial Fiel ao Logotipo do Espaço Mover */
+  /* Tom Roxo / Violeta Oficial do Círculo Central do Logo: #635fa8 */
+  --color-logo-purple: #635fa8;
+  --color-logo-purple-dark: #4d498c;
+  --color-logo-purple-deep: #38346e;
+  --color-logo-purple-light: #f2f1fc;
+  --color-logo-purple-soft: #dedbf5;
+  --color-logo-purple-glow: rgba(99, 95, 168, 0.25);
 
-  /* Sombras Terapêuticas Orgânicas */
-  --shadow-subtle: 0 2px 8px -2px rgba(33, 35, 34, 0.04), 0 1px 3px rgba(33, 35, 34, 0.02);
-  --shadow-card: 0 8px 24px -4px rgba(33, 35, 34, 0.05), 0 2px 6px -1px rgba(33, 35, 34, 0.03);
-  --shadow-elevated: 0 16px 36px -6px rgba(33, 35, 34, 0.08), 0 4px 12px -2px rgba(33, 35, 34, 0.03);
+  /* Tom Verde Sálvia Botânico da Tipografia do Logo: #8ab68d */
+  --color-logo-green: #8ab68d;
+  --color-logo-green-dark: #476f4a;
+  --color-logo-green-deep: #325235;
+  --color-logo-green-light: #eff6f0;
+  --color-logo-green-soft: #d7e8d9;
+  --color-logo-green-glow: rgba(138, 182, 141, 0.25);
+
+  /* Novo Fundo Acolhedor, Limpo e Terapêutico */
+  --color-bg-base: #FAF9FE;          /* Base perolada com leve infusão lavanda */
+  --color-porcelain: #FFFFFF;        /* Superfícies de Cards Brancos Puros */
+  --color-travertine: #F4F3FA;       /* Seções com nuance roxo/azulado suave */
+  --color-travertine-light: #F2F7F3; /* Seções com nuance verde sálvia suave */
+  --color-travertine-dark: #E8E6F5;
+
+  --color-graphite: #232238;         /* Grafite violeta escuro para máxima legibilidade */
+  --color-graphite-muted: #595673;   /* Texto secundário com contraste WCAG AAA */
+  --color-graphite-soft: #8885a3;    /* Detalhes e legendas */
+  --color-border-subtle: rgba(99, 95, 168, 0.10); /* Borda ultra-delicada */
+  --color-border-hover: rgba(99, 95, 168, 0.35);
+
+  /* Mapeamento Semântico para compatibilidade total com classes existentes */
+  --color-terracotta: #635fa8;       /* Roxo Oficial da Marca (Ação e Destaque) */
+  --color-terracotta-dark: #4d498c;
+  --color-terracotta-light: #f2f1fc;
+  --color-terracotta-glow: rgba(99, 95, 168, 0.25);
+
+  --color-sage: #8ab68d;             /* Verde Sálvia do Logo (Equilíbrio e Saúde) */
+  --color-sage-dark: #476f4a;
+  --color-sage-light: #eff6f0;
+  --color-sage-glow: rgba(138, 182, 141, 0.25);
+
+  --color-linen: #FAF9FE;
+
+  /* Sombras Terapêuticas Refinadas */
+  --shadow-subtle: 0 2px 8px -2px rgba(35, 34, 56, 0.04), 0 1px 3px rgba(35, 34, 56, 0.02);
+  --shadow-card: 0 8px 24px -4px rgba(99, 95, 168, 0.07), 0 2px 6px -1px rgba(35, 34, 56, 0.03);
+  --shadow-elevated: 0 16px 36px -6px rgba(99, 95, 168, 0.12), 0 4px 12px -2px rgba(35, 34, 56, 0.04);
+}
+
+/* ==========================================================================
+   FUNDO AMBIENTE COM ANIMAÇÕES SUAVES E ORGÂNICAS NAS CORES DO LOGO
+   Perfeito e fluido a 60fps em Smartphones, Notebooks, Tablets e Desktops
+   ========================================================================== */
+.ambient-background {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: var(--color-bg-base);
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  will-change: transform;
+  pointer-events: none;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Esfera 1: Roxo Suave do Logo (#635fa8) no topo / área do hero */
+.orb-purple {
+  width: min(540px, 85vw);
+  height: min(540px, 85vw);
+  top: -10%;
+  left: -5%;
+  background: radial-gradient(circle, rgba(99, 95, 168, 0.14) 0%, rgba(99, 95, 168, 0.05) 55%, transparent 100%);
+  animation: ambientFloat1 22s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Esfera 2: Verde Sálvia Botânico do Logo (#8ab68d) na meia-página */
+.orb-green {
+  width: min(500px, 80vw);
+  height: min(500px, 80vw);
+  top: 36%;
+  right: -8%;
+  background: radial-gradient(circle, rgba(138, 182, 141, 0.15) 0%, rgba(138, 182, 141, 0.05) 55%, transparent 100%);
+  animation: ambientFloat2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* Esfera 3: Luz suave de fusão para transição de seções */
+.orb-soft {
+  width: min(580px, 90vw);
+  height: min(580px, 90vw);
+  bottom: -10%;
+  left: 15%;
+  background: radial-gradient(circle, rgba(126, 121, 194, 0.11) 0%, rgba(138, 182, 141, 0.08) 50%, transparent 100%);
+  animation: ambientFloat3 30s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+@keyframes ambientFloat1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(40px, 30px, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(-20px, 45px, 0) scale(0.95);
+  }
+}
+
+@keyframes ambientFloat2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-40px, -25px, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(25px, 20px, 0) scale(0.96);
+  }
+}
+
+@keyframes ambientFloat3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  50% {
+    transform: translate3d(-30px, -35px, 0) scale(1.06);
+  }
+  100% {
+    transform: translate3d(40px, -20px, 0) scale(1);
+  }
+}
+
+/* Otimização responsiva para Smartphones e Tablets: desfoque menor preserva FPS a 60fps */
+@media (max-width: 768px) {
+  .ambient-orb {
+    filter: blur(48px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-orb {
+    animation: none !important;
+  }
 }
 
 /* Tipografia Base, Suavidade de Renderização & Reset Responsivo */
@@ -147,8 +270,8 @@ section[id], footer[id] {
 
 @media (hover: hover) and (pointer: fine) {
   .card-travertine-soft:hover {
-    background-color: #FAF8F4;
-    border-color: rgba(194, 110, 69, 0.25);
+    background-color: #FAF9FE;
+    border-color: rgba(99, 95, 168, 0.25);
     transform: translateY(-2px);
   }
 }
@@ -165,7 +288,7 @@ section[id], footer[id] {
   .btn-terracotta:hover {
     background-color: var(--color-terracotta-dark);
     transform: translateY(-1.5px);
-    box-shadow: 0 8px 20px -2px rgba(168, 90, 51, 0.3);
+    box-shadow: 0 8px 22px -2px rgba(77, 73, 140, 0.35);
   }
 }
 
@@ -209,6 +332,107 @@ section[id], footer[id] {
   }
 }
 
+/* Transições Fluídas e Animação Suave das Imagens em Rotação Contínua */
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.2s;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.slideshow-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 1.2s ease-out;
+  will-change: transform;
+}
+
+.slideshow-slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 3;
+}
+
+/* Leve animação contínua (movimento sutil) mantendo a imagem viva e elegante */
+.slideshow-slide.active img {
+  animation: slideGentleMotion 8s cubic-bezier(0.25, 1, 0.5, 1) infinite alternate;
+}
+
+@keyframes slideGentleMotion {
+  0% {
+    transform: scale(1.02) translate(0%, 0%);
+  }
+  50% {
+    transform: scale(1.06) translate(-0.8%, -0.5%);
+  }
+  100% {
+    transform: scale(1.035) translate(0.6%, 0.4%);
+  }
+}
+
+.slideshow-slide.prev {
+  opacity: 0;
+  visibility: visible;
+  z-index: 2;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slideshow-slide .slide-caption {
+  transform: translateY(6px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s, opacity 0.8s ease 0.15s;
+}
+
+.slideshow-slide.active .slide-caption {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.45);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.slide-dot.active {
+  width: 24px;
+  background-color: #FFFFFF;
+}
+
+.slide-thumb {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.slide-thumb:hover {
+  transform: translateY(-2px);
+}
+
+.slide-thumb.active {
+  border-color: var(--color-terracotta);
+  background-color: #FAF9FE;
+  box-shadow: 0 4px 12px -2px rgba(99, 95, 168, 0.25);
+  transform: translateY(-2px);
+}
+
 /* Botão Flutuante do WhatsApp em Terracota com Safe Area Inset */
 .whatsapp-float-editorial {
   position: fixed;
@@ -222,7 +446,7 @@ section[id], footer[id] {
   color: #FFFFFF;
   padding: 12px 20px;
   border-radius: 9999px;
-  box-shadow: 0 8px 24px -4px rgba(194, 110, 69, 0.38);
+  box-shadow: 0 8px 24px -4px rgba(99, 95, 168, 0.4);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   -webkit-tap-highlight-color: transparent;
 }
@@ -324,7 +548,7 @@ section[id], footer[id] {
 
 @media (hover: hover) and (pointer: fine) {
   .practice-chip:hover {
-    border-color: rgba(194, 110, 69, 0.4);
+    border-color: rgba(99, 95, 168, 0.35);
     background-color: var(--color-travertine-light);
     transform: translateY(-1px);
   }
@@ -334,7 +558,7 @@ section[id], footer[id] {
   border-color: var(--color-terracotta);
   background-color: var(--color-terracotta-light);
   color: var(--color-terracotta-dark);
-  box-shadow: 0 4px 12px -2px rgba(194, 110, 69, 0.15);
+  box-shadow: 0 4px 12px -2px rgba(99, 95, 168, 0.2);
 }
 
 /* Acessibilidade: respeita preferências de menos movimento */

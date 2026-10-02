@@ -1,7 +1,7 @@
 /**
- * Espaço Mover - Interatividade & Comportamento Refinado
+ * Espaço Mover: Interatividade e Cuidados
  * Fisioterapia Clínica, Pilates em Aparelhos e Modalidades Aéreas
- * Ribeirão Preto / SP
+ * Ribeirão Preto, SP
  */
 
 // Configuração Centralizada
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (recBenefits) {
             recBenefits.innerHTML = data.benefits.map(b => `
               <li class="flex items-start gap-2.5 text-xs sm:text-sm text-graphite-muted">
-                <span class="material-symbols-outlined text-[18px] text-terracotta shrink-0 mt-0.5">check_circle</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-sage mt-2 shrink-0"></span>
                 <span>${b}</span>
               </li>
             `).join('');
@@ -407,4 +407,107 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // =========================================================================
+  // 8. Transição Dinâmica e Contínua de Imagens (Slideshow Automático)
+  // =========================================================================
+  const heroSlideshow = document.getElementById('hero-slideshow');
+  if (heroSlideshow) {
+    const slides = heroSlideshow.querySelectorAll('.slideshow-slide');
+    const dots = document.querySelectorAll('.slide-dot');
+    const thumbs = document.querySelectorAll('.slide-thumb');
+    const prevBtn = document.getElementById('slideshow-prev');
+    const nextBtn = document.getElementById('slideshow-next');
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+    const intervalMs = 4000; // Imagens mudando a cada 4 segundos
+
+    const showSlide = (index) => {
+      if (slides.length === 0) return;
+      
+      const newIndex = (index + slides.length) % slides.length;
+      const prevIndex = currentIndex;
+      currentIndex = newIndex;
+
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active', 'prev');
+        if (i === prevIndex && prevIndex !== newIndex) {
+          slide.classList.add('prev');
+        }
+        if (i === newIndex) {
+          slide.classList.add('active');
+        }
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === newIndex);
+      });
+
+      thumbs.forEach((thumb, i) => {
+        thumb.classList.toggle('active', i === newIndex);
+      });
+    };
+
+    const nextSlide = () => showSlide(currentIndex + 1);
+    const prevSlide = () => showSlide(currentIndex - 1);
+
+    const startAutoPlay = () => {
+      stopAutoPlay();
+      autoPlayTimer = setInterval(nextSlide, intervalMs);
+    };
+
+    const stopAutoPlay = () => {
+      if (autoPlayTimer) {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = null;
+      }
+    };
+
+    const resetAutoPlay = () => {
+      stopAutoPlay();
+      startAutoPlay();
+    };
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextSlide();
+        resetAutoPlay();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevSlide();
+        resetAutoPlay();
+      });
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const targetIndex = parseInt(dot.getAttribute('data-slide'), 10);
+        if (!isNaN(targetIndex)) {
+          showSlide(targetIndex);
+          resetAutoPlay();
+        }
+      });
+    });
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const targetIndex = parseInt(thumb.getAttribute('data-thumb'), 10);
+        if (!isNaN(targetIndex)) {
+          showSlide(targetIndex);
+          resetAutoPlay();
+        }
+      });
+    });
+
+    // Início imediato da rotação suave e contínua das imagens
+    startAutoPlay();
+  }
 });
+

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 500 450" width="100%" height="100%">
+  <defs>
+    <!-- Caminho para o texto superior curvado -->
+    <path id="topCurve" d="M 55,270 A 195,195 0 0,1 445,270" fill="none" />
+    
+    <!-- Caminho para o texto inferior curvado -->
+    <path id="bottomCurve" d="M 68,260 A 185,185 0 0,0 432,260" fill="none" />
+  </defs>
+
+  <!-- Círculo central roxo/azulado -->
+  <circle cx="250" cy="285" r="145" fill="#635fa8" />
+
+  <!-- Monograma interior 'M' / curva contínua branca -->
+  <path d="M 135,338 
+           L 135,225 
+           C 135,210 148,198 163,198 
+           C 178,198 190,210 198,222 
+           L 248,300 
+           C 256,312 268,318 280,312 
+           C 292,306 295,292 285,278 
+           L 243,220 
+           L 272,198 
+           L 316,258 
+           C 334,282 328,318 300,336 
+           C 274,352 240,342 224,318 
+           L 182,252 
+           C 178,245 170,240 163,240 
+           L 163,338 
+           Z" 
+        fill="#ffffff" />
+
+  <!-- Perna diagonal inferior direita da letra M -->
+  <path d="M 283,230 
+           L 372,338 
+           L 335,338 
+           L 255,242 
+           Z" 
+        fill="#ffffff" />
+
+  <!-- Texto Superior: espaço mover -->
+  <text fill="#8ab68d" font-family="'Nunito', 'Comfortaa', 'Montserrat', 'Segoe UI', sans-serif" font-size="44" font-weight="700" letter-spacing="2">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">
+      espaço mover
+    </textPath>
+  </text>
+
+  <!-- Texto Inferior: fisioterapia, pilates e aéreos -->
+  <text fill="#8ab68d" font-family="'Nunito', 'Segoe UI', 'Arial Rounded MT Bold', sans-serif" font-size="20" font-weight="600" letter-spacing="3.5">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">
+      fisioterapia, pilates e aéreos
+    </textPath>
+  </text>
+</svg>
