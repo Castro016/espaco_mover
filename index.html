@@ -258,7 +258,7 @@
         <div class="lg:col-span-5 reveal-on-scroll">
           <div class="relative w-full rounded-2xl overflow-hidden bg-travertine shadow-md border border-black/5">
 
-            <!-- Slideshow com Transição Suave e Contínua -->
+            <!-- Slideshow com Transição Suave e Foco Centralizado no Meio -->
             <div id="hero-slideshow" class="relative w-full slideshow-container aspect-[4/3] sm:aspect-[16/11]">
 
               <!-- Slide 1: Lira Acrobática -->
@@ -279,9 +279,9 @@
 
               <!-- Slide 2: Pilates no Reformer Completo -->
               <div class="slideshow-slide absolute inset-0 cursor-pointer gallery-trigger"
-                data-src="assets/images/pilates-reformer-full.jpg"
+                data-src="assets/images/pilates-reformer-kids.jpg"
                 data-caption="Estúdio de Pilates em Aparelhos: ambiente completo com equipamentos e turmas reduzidas.">
-                <img src="assets/images/pilates-reformer-full.jpg" alt="Estúdio de Pilates em Aparelhos"
+                <img src="assets/images/pilates-reformer-kids.jpg" alt="Estúdio de Pilates em Aparelhos"
                   class="w-full h-full object-cover object-center" />
                 <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent"></div>
                 <div class="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 text-white slide-caption">
@@ -298,7 +298,7 @@
                 data-src="assets/images/fisioterapia-barras-paralelas.jpg"
                 data-caption="Fisioterapia e Desenvolvimento Motor: fortalecimento funcional e equilíbrio nas barras paralelas.">
                 <img src="assets/images/fisioterapia-barras-paralelas.jpg" alt="Fisioterapia nas barras paralelas"
-                  class="w-full h-full object-cover object-center" />
+                  class="w-full h-full object-cover object-fisio" />
                 <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent"></div>
                 <div class="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 text-white slide-caption">
                   <span class="text-xs uppercase tracking-widest text-terracotta-light font-medium block">Fisioterapia
@@ -330,7 +330,7 @@
                 data-src="assets/images/reabilitacao-espaldar.jpg"
                 data-caption="Alongamento e mobilidade da coluna no espaldar para postura e descompressão.">
                 <img src="assets/images/reabilitacao-espaldar.jpg" alt="Alongamento no espaldar"
-                  class="w-full h-full object-cover object-center" />
+                  class="w-full h-full object-cover object-espaldar" />
                 <div class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent"></div>
                 <div class="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 text-white slide-caption">
                   <span class="text-xs uppercase tracking-widest text-terracotta-light font-medium block">Mobilidade e
@@ -371,7 +371,7 @@
                 class="slide-thumb active p-1 rounded-xl bg-white hover:bg-travertine-light transition-all flex flex-col items-center"
                 data-thumb="0" aria-label="Ver Lira Acrobática">
                 <div class="w-full aspect-[4/3] rounded-lg overflow-hidden">
-                  <img src="assets/images/aereos-lira-acrobatica.jpg" alt="Aéreos" class="w-full h-full object-cover" />
+                  <img src="assets/images/aereos-lira-acrobatica.jpg" alt="Aéreos" class="w-full h-full object-cover object-center" />
                 </div>
                 <span
                   class="text-[10px] font-medium text-graphite-muted truncate w-full text-center mt-1 hidden sm:block">Aéreos</span>
@@ -380,7 +380,7 @@
                 class="slide-thumb p-1 rounded-xl bg-white hover:bg-travertine-light transition-all flex flex-col items-center"
                 data-thumb="1" aria-label="Ver Estúdio de Pilates">
                 <div class="w-full aspect-[4/3] rounded-lg overflow-hidden">
-                  <img src="assets/images/pilates-reformer-full.jpg" alt="Pilates" class="w-full h-full object-cover" />
+                  <img src="assets/images/pilates-reformer-kids.jpg" alt="Pilates" class="w-full h-full object-cover object-center" />
                 </div>
                 <span
                   class="text-[10px] font-medium text-graphite-muted truncate w-full text-center mt-1 hidden sm:block">Pilates</span>
@@ -390,7 +390,7 @@
                 data-thumb="2" aria-label="Ver Fisioterapia">
                 <div class="w-full aspect-[4/3] rounded-lg overflow-hidden">
                   <img src="assets/images/fisioterapia-barras-paralelas.jpg" alt="Fisioterapia"
-                    class="w-full h-full object-cover" />
+                    class="w-full h-full object-cover object-fisio" />
                 </div>
                 <span
                   class="text-[10px] font-medium text-graphite-muted truncate w-full text-center mt-1 hidden sm:block">Fisio</span>
@@ -399,7 +399,7 @@
                 class="slide-thumb p-1 rounded-xl bg-white hover:bg-travertine-light transition-all flex flex-col items-center"
                 data-thumb="3" aria-label="Ver Pilates Kids">
                 <div class="w-full aspect-[4/3] rounded-lg overflow-hidden">
-                  <img src="assets/images/pilates-reformer-kids.jpg" alt="Kids" class="w-full h-full object-cover" />
+                  <img src="assets/images/pilates-reformer-kids.jpg" alt="Kids" class="w-full h-full object-cover object-center" />
                 </div>
                 <span
                   class="text-[10px] font-medium text-graphite-muted truncate w-full text-center mt-1 hidden sm:block">Kids</span>
@@ -408,7 +408,7 @@
                 class="slide-thumb p-1 rounded-xl bg-white hover:bg-travertine-light transition-all flex flex-col items-center"
                 data-thumb="4" aria-label="Ver Alongamento no Espaldar">
                 <div class="w-full aspect-[4/3] rounded-lg overflow-hidden">
-                  <img src="assets/images/reabilitacao-espaldar.jpg" alt="Coluna" class="w-full h-full object-cover" />
+                  <img src="assets/images/reabilitacao-espaldar.jpg" alt="Coluna" class="w-full h-full object-cover object-espaldar" />
                 </div>
                 <span
                   class="text-[10px] font-medium text-graphite-muted truncate w-full text-center mt-1 hidden sm:block">Coluna</span>
@@ -690,10 +690,10 @@
           <!-- Foto 2: Pilates Reformer Completo (5 colunas) -->
           <div
             class="md:col-span-5 card-clean rounded-2xl overflow-hidden group cursor-pointer gallery-trigger stagger-item"
-            data-src="assets/images/pilates-reformer-full.jpg"
+            data-src="assets/images/pilates-reformer-kids.jpg"
             data-caption="Estúdio de Pilates em Aparelhos: aparelhos completos de alta precisão em madeira nobre.">
             <div class="h-64 sm:h-80 md:h-96 w-full relative overflow-hidden photo-zoom-container">
-              <img src="assets/images/pilates-reformer-full.jpg" alt="Estúdio de Pilates em Aparelhos"
+              <img src="assets/images/pilates-reformer-kids.jpg" alt="Estúdio de Pilates em Aparelhos"
                 class="w-full h-full object-cover object-center" />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent opacity-0 group-hover:opacity-100 transition-editorial flex items-end p-5 sm:p-6">
@@ -746,7 +746,7 @@
             data-caption="Exercício funcional nas barras paralelas para desenvolvimento motor, equilíbrio e força no Espaço Mover.">
             <div class="h-56 sm:h-72 w-full relative overflow-hidden photo-zoom-container">
               <img src="assets/images/fisioterapia-barras-paralelas.jpg" alt="Treino funcional nas barras paralelas"
-                class="w-full h-full object-cover object-center" />
+                class="w-full h-full object-cover object-fisio" />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent opacity-0 group-hover:opacity-100 transition-editorial flex items-end p-4">
                 <div class="text-white">
@@ -772,7 +772,7 @@
             data-caption="Exercícios de mobilidade vertebral e alongamento no espaldar para coluna e alívio de tensões.">
             <div class="h-56 sm:h-72 w-full relative overflow-hidden photo-zoom-container">
               <img src="assets/images/reabilitacao-espaldar.jpg" alt="Exercício no espaldar para coluna"
-                class="w-full h-full object-cover object-center" />
+                class="w-full h-full object-cover object-espaldar" />
               <div
                 class="absolute inset-0 bg-gradient-to-t from-graphite/85 via-graphite/20 to-transparent opacity-0 group-hover:opacity-100 transition-editorial flex items-end p-4">
                 <div class="text-white">
